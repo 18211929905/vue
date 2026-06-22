@@ -8,6 +8,7 @@
     "inspect:webpack": "vue inspect"
   },
   "dependencies": {
+    "axios": "^1.18.0",
     "vue": "^2.7.16"
   },
   "devDependencies": {

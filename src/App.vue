@@ -6,12 +6,27 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "App",
   data() {
     return {
       title: "Hello Vue sss211111",
+      requestUrl: "/api/simple",
     };
+  },
+  mounted() {
+    this.fetchSimpleData();
+  },
+  methods: {
+    async fetchSimpleData() {
+      try {
+        await axios.get(this.requestUrl);
+      } catch (error) {
+        console.error("请求 /api/simple 失败：", error);
+      }
+    },
   },
 };
 </script>
