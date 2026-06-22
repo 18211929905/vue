@@ -10,7 +10,7 @@ export default {
   name: "App",
   data() {
     return {
-      title: "Hello Vue 2",
+      title: "Hello Vue sss2",
     };
   },
 };
